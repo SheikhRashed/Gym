@@ -1,12 +1,13 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 08/05/2017 07:48
+  	Creation date: 11/05/2019 13:23
   	*/
 
 @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -23,17 +24,16 @@
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-    font-family: Flaticon;
-    font-style: normal;
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-people-2:before { content: "\f100"; }
-.flaticon-gym-1:before { content: "\f101"; }
-.flaticon-people-1:before { content: "\f102"; }
-.flaticon-people:before { content: "\f103"; }
-.flaticon-weightlifting:before { content: "\f104"; }
-.flaticon-gym:before { content: "\f105"; }
-.flaticon-boxing-fighter:before { content: "\f106"; }
-.flaticon-transport:before { content: "\f107"; }
-.flaticon-jumping-rope-silhouette:before { content: "\f108"; }
-.flaticon-buddhist-yoga-pose:before { content: "\f109"; }
+.flaticon-weightlifting:before { content: "\f100"; }
+.flaticon-exercise:before { content: "\f101"; }
+.flaticon-exercise-1:before { content: "\f102"; }
+.flaticon-weightlifting-1:before { content: "\f103"; }
+.flaticon-yoga:before { content: "\f104"; }
+.flaticon-exercise-2:before { content: "\f105"; }
+.flaticon-exercise-3:before { content: "\f106"; }
