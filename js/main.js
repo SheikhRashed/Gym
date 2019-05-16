@@ -1,4 +1,34 @@
 $(function(){
+  "use strict";
+
+     
+  var $nav = $('#header');
+  var $dis = $nav.offset().top;
+  var $htmlbody = $('html,body');
+
+   $(window).scroll(function () {
+      var $scrolling = $(this).scrollTop();
+     if ($scrolling >= $dis) {
+          $nav.addClass('position-fixed');
+      } else {
+          $nav.removeClass('position-fixed');
+      }
+  })
+
+    //smooth scroll 
+    $('.navbar-nav .nav-item .nav-link').on('click', function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $htmlbody.animate({
+                scrollTop: target.offset().top - 65
+            }, 1000);
+            return false;
+        }
+      }
+    });
+  
 //Slick-banner1
 $('.banner_slick').slick ({
   dots:true,
@@ -7,6 +37,16 @@ $('.banner_slick').slick ({
   autoplay:true,
   autoplaySpeed: 3000,
   fade:true,
+  responsive: [
+    { 
+      breakpoint: 770,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1, 
+      }
+    }, 
+    
+  ]
   
 });
 //youtube video
@@ -62,7 +102,7 @@ $('.client_slide').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -82,4 +122,57 @@ $('.client_slide').slick({
     overlayColor: "#000",
     overlayOpacity: ".6"
   });
+
+
+  // logo slide
+  $('.logo-slide').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 322,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+    ]
+  });
+
+   //Top to back
+   $(".top-btm").click(function(){
+    $($htmlbody).animate({
+        "scrollTop" : "0"
+    }, 500)
+});
+
+ //fade in fade out
+ $(window).scroll(function(){
+  var scrollValue = $(this).scrollTop();
+
+  if(scrollValue >= 500){
+      $(".top-btm").fadeIn();
+  }else{
+   $(".top-btm").fadeOut();
+  }
+});
+
 });
