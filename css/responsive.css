@@ -61,9 +61,11 @@
  .bnnr_content h1 {
   font-size: 40px;
 }
-
+.bnnr-1 .bnnr_content {
+  background: none;
+}
 .bnnr_content a {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .bnnr-Position {
   min-height: 400px;
