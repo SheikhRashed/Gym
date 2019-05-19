@@ -1,8 +1,43 @@
-/* ======== [767px] Extra Small Devices====== */
+/* ========== speacial Device for 320px================== */
+@media(max-width:320px) {
+ .bnnr-2 .bnnr_content h3 {
+ margin-left: 18px;
+}
+.bnnr-2 .bnnr_content h1 {
+ margin-left: -23px;
+}
+.bnnr-2 .bnnr_content p {
+ text-align: center;
+ margin-left: -66px;
+}
+.bnnr-2 .bnnr_content .bnnr_btn {
+ margin-left: -20px;
+} 
+/* banner-3 */
 
-@media (max-width:767px) {
+ .bnnr-3 .bnnr_content h3 {
+ margin-left: 18px;
+}
+.bnnr-3 .bnnr_content h1 {
+ margin-left: -23px;
+}
+.bnnr-3 .bnnr_content p {
+ text-align: center;
+ margin-left: -66px;
+}
+.bnnr-3 .bnnr_content .bnnr_btn {
+ margin-left: -20px;
+} 
+}
 
- /* ===header section=== */
+
+
+
+
+/* ==== media for 767px devices====== */
+
+@media (max-width: 767px) {
+  /* ===header section=== */
 #header{
   position: fixed;
   top: 0;
@@ -21,16 +56,18 @@
   padding: 0px 30px;
   top: -5px;
 }
+
+
 .navbar-collapse {
   text-align: center;
   margin-top: 10px;
   background: #1a2a6c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
+
  }
- 
+
+  
  .navbar button {
   background: #c21500;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
@@ -38,8 +75,7 @@
   
  }
 
- 
-.navbar-nav {
+ .navbar-nav {
   margin-top: 10px;
 }
 
@@ -48,46 +84,40 @@
   text-align: center;
  }
 
+
  .navbar-nav > .nav-item > .nav-link.active::after,
  .navbar-nav > .nav-item > .nav-link:hover::after {
    width: 0px;
  }
 
- /* ===banner section==== */
- .bnnr_content h3 {
-   font-size: 20px;
- }
 
- .bnnr_content h1 {
-  font-size: 40px;
+
+ /* ====banner-Section======== */
+
+
+ .bnnr_content h3 {
+  font-size: 20px;
+}
+
+.bnnr_content h1 {
+ font-size: 40px;
 }
 .bnnr-1 .bnnr_content {
-  background: none;
+ background: none;
 }
 
-.bnnr-2 .bnnr_content h3 {
-  margin-left: 18px;
-}
-.bnnr-2 .bnnr_content h1 {
-  margin-left: -23px;
-}
-.bnnr-2 .bnnr_content p {
-  text-align: center;
-  margin-left: -66px;
-}
-
-.bnnr-2 .bnnr_content .bnnr_btn {
-  margin-left: -20px;
-}
 .bnnr_content a {
-  padding: 0 10px;
+ padding: 0 10px;
 }
 .bnnr-Position {
-  min-height: 400px;
+ min-height: 400px;
 }
 .bnnr_content {
-  padding-top: 25%;
+ padding-top: 25%;
 }
+
+
+ /* =========End of banner-Section========= */
 
 /* ===About Section====== */
 #about,
@@ -115,16 +145,21 @@ figure {
   bottom: 2rem;
   right: 1.5rem;
 }
+ 
+
 
 }
+
+
 /* =====[576px] &[767px]==== */
 @media (min-width: 576px) and (max-width: 767px) {
   .colorful-tab-content ul li {
     width: 33.3%;
   }
  }
+ 
 
-
+ 
  /* =====[768px] &[991px]==== */
  @media (min-width: 768px) and (max-width: 991px) {
   #header .navbar {
@@ -142,3 +177,5 @@ figure {
     margin-top: 30px;
   }
  }
+
+
