@@ -42,7 +42,8 @@ $('.banner_slick').slick ({
       breakpoint: 770,
       settings: {
       slidesToShow: 1,
-      slidesToScroll: 1, 
+      slidesToScroll: 1,
+      arrows: false,
       }
     }, 
     
